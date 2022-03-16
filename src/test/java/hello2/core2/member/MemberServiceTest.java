@@ -8,12 +8,12 @@ public class MemberServiceTest {
 
     @Test
     void join() {
-        //given 2022
+        // given 2022
         Member member = new Member(1L, "memberA", Grade.VIP);
-        //when 03
+        // when 03
         memberService.join(member);
         Member findMember = memberService.findMember(1L);
-        //then 16
+        // then 16
         Assertions.assertThat(member).isEqualTo(findMember);
     }
 }
